@@ -6,7 +6,7 @@ services:
       - "8000:80"
     environment:
       - AWS_REGION=us-east-1
-      - S3_OUTPUT=s3://mi-proyecto-queries/athena-results/
+      - S3_OUTPUT=s3://bucket-foodflow-1/athena-results/
       - ATHENA_DEFAULT_DB=default
     volumes:
       - ./app:/app/app
